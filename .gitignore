@@ -29,3 +29,7 @@ coverage/
 # Generated package
 *.pkg
 *.deb
+
+# Claude
+.claude
+WORK_IN_PROGRESS.md
