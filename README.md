@@ -85,11 +85,14 @@ sudo dpkg -i proxydetox-*.deb
 ### Build from Source
 
 ```bash
-# Install dependencies
-sudo apt install libkrb5-dev
+# Install build dependencies
+sudo apt install libclang-dev libkrb5-dev
 
-# Build
-cargo build --release --features=negotiate
+# Build with Kerberos/SPNEGO support (default)
+cargo build --release
+
+# Or build without Kerberos support
+cargo build --release --no-default-features
 ```
 
 ## Documentation
