@@ -64,7 +64,7 @@ rustls-pemfile = "2.2"
 socket2 = { version = "0.5", features = ["all"] }
 spnego = { path = "spnego" }
 thiserror = "2.0"
-tokio = { version = "1", features = ["io-util", "rt-multi-thread", "net", "macros", "sync", "signal"] }
+tokio = { version = "1", features = ["io-util", "rt-multi-thread", "net", "macros", "sync", "signal", "time"] }
 tokio-rustls = "0.26"
 tokio-stream = { version = "0.1", features = ["net", "sync"] }
 tokio-util = "0.7"
