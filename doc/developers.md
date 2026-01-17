@@ -15,7 +15,6 @@
   utilize HTTP proxies.
 - [proxydetox](./proxydetox/) - The actual Proxydetox software.
 
-[windows-rs]: https://github.com/microsoft/windows-rs "Rust for the Windows SDK"
 [hyper]: https://github.com/hyperium/hyper "A fast and correct HTTP implementation for Rust"
 
 ## Third party source code in this repository

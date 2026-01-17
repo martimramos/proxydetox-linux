@@ -10,7 +10,6 @@
 
 - [Building Proxydetox](build.md)
   - [Auto start](service.md)
-- [Cross compiling](cross_compile.md)
 - [For developers](developers.md)
 
 ---
