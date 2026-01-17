@@ -69,10 +69,7 @@ impl Stream for RequestStream {
         self: std::pin::Pin<&mut Self>,
         cx: &mut std::task::Context<'_>,
     ) -> std::task::Poll<Option<Self::Item>> {
-        let Self {
-            socket,
-            ref mut data,
-        } = self.get_mut();
+        let Self { socket, data } = self.get_mut();
         let mut data = Pin::new(data);
         let mut buffer = ReadBuf::new(&mut data);
         match Pin::new(&socket).poll_recv_from(cx, &mut buffer) {
